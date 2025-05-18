@@ -37,7 +37,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/chat" element={<ChatPage />} />
-            <Route path="/quiz" element={<QuizGenerator />} />
+            <Route path="/generate-quiz" element={<QuizGenerator />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/paper" element={<GeneratePaper />} />
             <Route path="/paper-result" element={<PaperResult />} />

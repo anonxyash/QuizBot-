@@ -38,9 +38,9 @@ export default function Navbar() {
               Chat
             </Link>
             <Link
-              to="/quiz" // Updated path
+              to="/generate-quiz" 
               className={`text-sm transition-colors ${
-                isActive('/quiz') ? 'text-white font-semibold' : 'text-neutral-300 hover:text-white font-normal' // Updated path check
+                isActive('/generate-quiz') ? 'text-white font-semibold' : 'text-neutral-300 hover:text-white font-normal'
               }`}
             >
               Quiz Generator

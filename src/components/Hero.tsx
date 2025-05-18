@@ -39,7 +39,7 @@ export default function Hero() {
           </button>
 
           <button
-            onClick={() => handleAction('/quiz')}
+            onClick={() => handleAction('/generate-quiz')}
             className="inline-flex items-center gap-2 border border-primary text-primary px-8 py-4 rounded-full 
                      font-semibold text-lg transition-all hover:-translate-y-1
                      animate-fadeIn animation-delay-400"
