@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hover-border-purple {
+  @apply hover:border-primary;
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-black text-white antialiased;
+  }
+}
+
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(128, 128, 128, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(128, 128, 128, 0.15) 1px, transparent 1px);
+  background-size: 80px 80px;
+  background-position: center center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}
+
+.blur-background {
+  animation: blurIn 0.5s ease-out forwards;
+}
+
+@keyframes blurIn {
+  from { backdrop-filter: blur(0); }
+  to { backdrop-filter: blur(8px); }
+}
+
+.loading-animation {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes live-gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-live-gradient {
+  animation: live-gradient-animation 6s ease-in-out infinite;
+}
