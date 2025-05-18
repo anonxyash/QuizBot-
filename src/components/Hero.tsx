@@ -1,14 +1,16 @@
 
 import { ArrowRight, BookOpen, Infinity } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleAction = (path: string) => {
     setIsLoading(true);
     setTimeout(() => {
-      window.location.href = path;
+      navigate(path);
     }, 2000);
   };
 
